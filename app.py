@@ -1,13 +1,21 @@
-def predict_result(marks):
-    if marks >= 40:
+def calculate_average(maths, science, english):
+    return (maths + science + english) / 3
+
+
+def get_result(average):
+    if average >= 40:
         return "PASS"
     else:
         return "FAIL"
 
 
 if __name__ == "__main__":
-    marks = 75
-    result = predict_result(marks)
+    maths = 85
+    science = 72
+    english = 78
 
-    print("Student Marks:", marks)
-    print("Predicted Result:", result)
+    average = calculate_average(maths, science, english)
+    result = get_result(average)
+
+    print("Average Marks:", average)
+    print("Student Result:", result)
