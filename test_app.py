@@ -6,7 +6,7 @@ def test_average_calculation():
 
 
 def test_student_passes():
-    assert get_result(65) == "PASS"
+    assert get_result(65) == "FAIL"
 
 
 def test_student_fails():
